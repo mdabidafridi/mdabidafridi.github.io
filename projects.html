@@ -40,8 +40,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="publication.html">Publication</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Experience
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" href="research-experience.html">Research Experience</a>
+                            <a class="nav-link" href="professional-experience.html">Professional Experience</a>
+
                     </li>
-                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="teaching.html">Teaching</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="skills.html">Skills</a>
                     </li>
@@ -58,9 +69,11 @@
                     <div>
                         <input type="checkbox" class="checkbox" id="chk" onclick="darkmode()" />
                         <label class="label" for="chk">
+
                             <i class="fas fa-moon"></i>
                             <i class="fas fa-sun"></i>
                             <div class="ball"></div>
+
                         </label>
                     </div>
 
@@ -68,82 +81,158 @@
             </div>
         </div>
     </nav>
-    <!-- End of page navigation -->
+    <!-- End of page navibation -->
+
+
+
+
 
     <!-- About section -->
-    <section class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="resume-section-content">
-                    <h2 class="mb-3">Projects</h2>
+    <!-- <section class="section mt-3"> -->
+    <div class="container mt-5">
+        <div class="row text-center text-md-left">
+            <div class="resume-section-content">
+                <h2 class="mb-3 ">Projects</h2>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Gulshan-1 intersection Simulation for CAPSTONE Project L4-T1</h4>
-                            <div class="subheading mb-0"><a href="https://youtu.be/ZXI0C4N1Xfc?si=5OP9gwe0avYCYtcT">[Demo Video]</a></div>
-                            <p><strong>Technologies:</strong> <i>VISSIM Software</i> </p>
-                            <p>In this work, I have simulated the current scenario of Gulshan-1, Dhaka intersection and found queue length.</p>
-                            <div id="content-mobile">
-                                <!-- <img class="img-fluid img-profile mx-auto mb-2" width="75%" height="auto" src="assets/imgs/project/tb.png" alt="..."> -->
-                            </div>
+
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                    <div class="flex-grow-1 ">
+                        <h4 class="mb-0 ">Gulshan-1 intersection Simulation for CAPSTONE Project L4-T1</h4>
+                        <div class="subheading mb-0 "><a
+                                href="https://youtu.be/ZXI0C4N1Xfc?si=5OP9gwe0avYCYtcT">[Demo Video]</a>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
+                        <p><strong>Technologies:</strong> <i>VISSIM Software</i> </p>
+                        <p>In this work, I have simulate current scenerio of Gulshan-1, Dhaka intersection and 
+                           found queue length. 
+                        </p>
+                        <div id="content-mobile">
+                            <!-- <img class="img-fluid img-profile mx-auto mb-2" width="75%" height="auto"
+                                src="assets/imgs/project/tb.png" alt="..."> -->
+                        </div>
                     </div>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Trip Tracker app for collecting data of users</h4>
-                            <div class="subheading mb-0">L3 T2 (6th semester)
-                                <a href="https://youtu.be/PItVsZRdbVo?si=ydOyUxiiCuzVrO60">[Demo Video]</a>
-                            </div>
-                            <p><strong>Technologies:</strong> <i>Flutter, MongoDB</i> </p>
-                            <p>When the app launches for the first time, it will seek location permission and a userID.
-                                The app will remember this userID. When the user goes out, he/she will click on the
-                                'Start Trip' button and select a 'Mode.' When the trip ends, the user should press the
-                                'End Trip' button, and then the data will be sent to MongoDB. It will collect data
-                                on location, time, and mode.
-                            </p>
-                            <div id="content-mobile">
-                                <iframe id="content-mobile" src="https://www.youtube.com/embed/PItVsZRdbVo"
-                                    title="For data collection" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Deep learning for detecting heterogeneous traffic mode of Dhaka, Bangladesh</h4>
-                            <div class="subheading mb-0">L3 T2 (6th semester)
-                                <a href="https://youtu.be/pkRtK9QDwGI?si=5mk380zjrSDEgquh">[Demo Video]</a>
-                            </div>
-                            <p><strong>Technologies:</strong> <i>Python, Google Colab</i> </p>
-                            <p>I used <a href="https://www.kaggle.com/datasets/rifat963/dhakaai-dhaka-based-traffic-detection-dataset">Dhaka-AI</a>
-                                dataset for training the model.
-                            </p>
-                            <div id="content-mobile">
-                                <iframe id="content-mobile" src="https://youtu.be/pkRtK9QDwGI?si=5mk380zjrSDEgquh"
-                                    title="Detecting heterogeneous traffic mode" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
-                    </div>
+                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2023</i></strong></span></div>
                 </div>
+
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                    <div class="flex-grow-1 ">
+                        <h4 class="mb-0 ">Online Book Sharing Platform </h4>
+                        <p><strong>Technologies:</strong> <i>Nodejs, ReactJs, MongoDB</i> </p>
+                        <div class="subheading mb-0 ">L4 T1 (7th semester, Software Engr. Lab Project) <a
+                                href="https://bookazon-frontend.herokuapp.com/">[Visit The Live Site]</a></div>
+                        <p>Online Book-selling and giveaway platform. Users can purchase books from their local
+                            bookstores and even
+                            add sale posts. Additionally, users may donate their unused old books</p>
+                           <div id="content-mobile">
+                            <img class="img-fluid img-profile mx-auto mb-2" src="assets/imgs/r1.jpeg" alt="...">
+                        </div> -->
+                    <!-- </div>
+                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2021</i></strong></span></div>
+
+                </div> --> 
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                    <div class="flex-grow-1 ">
+                        <h4 class="mb-0 ">Trip Tracker app for collecting data of users </h4>
+                        <div class="subheading mb-0 ">L3 T2 (6th semester)
+                            <!-- <a href="https://github.com/shovito66/heartRateMonitoring">[GitHub]</a> -->
+                            <a href="https://youtu.be/PItVsZRdbVo?si=ydOyUxiiCuzVrO60"> [Demo Video]</a>
+                        </div>
+                        <p><strong>Technologies:</strong> <i>Flutter, MongoDB</i> </p>
+                        <p>When the app launches for the first time, it will seek location permission and a userID. 
+                            The app will remember this userID. When the user goes out, he/she will click on the 
+                            'Start Trip' button and select a 'Mode.' When the trip ends, the user should press the
+                            'End Trip' button, and then the data will be sent to MongoDB. It will collect data 
+                            on location, time, and mode.
+                        </p>
+
+                        <div id="content-mobile">
+                            <iframe id="content-mobile" src="https://www.youtube.com/embed/PItVsZRdbVo"
+                                title="For data collection" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            <!-- <img class="img-fluid img-profile mx-auto mb-2" src="assets/imgs/project/sensing.jpg"
+                                alt="..."> -->
+                            <!-- <img class="img-fluid img-profile mx-auto mb-2" width="50%" height="50%"
+                                src="assets/imgs/project/block_summary.png" alt="..."> -->
+                        </div>
+
+                    </div>
+                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2023</i></strong></span></div>
+                </div>
+
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                    <div class="flex-grow-1 ">
+                        <h4 class="mb-0 "> Algorithm Simulator </h4>
+                        <div class="subheading mb-0 ">L1 T2 (2nd semester)
+                            <a class="social-item" href="https://github.com/shovito66/Algorithm-Simulator"><i
+                                    class="ti-github"></i></a>
+                            <a class="social-item" href="https://www.youtube.com/watch?v=MYR6FlUK3Y4"><i
+                                    class="ti-youtube"></i></a>
+                        </div>
+                        <p><strong>Technologies:</strong> <i>JavaFX, Java, InelliJ</i> </p>
+                        <p>Aim of this project was to get familiar with OOP language, GUI designing, and simulate
+                            different algorithms
+                            visually by taking input from users. This is a java project that shows simulation of 3
+                            sorting algorithms and BFS.
+                            JavaFx is used for the UI part. In our simulation part of sorting algorithm, we resize the
+                            bar of input given by the
+                            user so that it can fit in window.</p>
+                        <iframe src="https://www.youtube.com/embed/MYR6FlUK3Y4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2018</i></strong></span></div>
+                </div>
+
+                <br>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-8 ">
+                    <div class="flex-grow-1 mb-4">
+                        <h4 class="mb-1 "> <b>Spondon - A medical App</b> <a class="social-item"
+                                href="https://github.com/shovito66"><i class="ti-github"></i></a>
+                            <a class="social-item" href="https://www.youtube.com/watch?v=MYR6FlUK3Y4"><i
+                                    class="ti-youtube"></i></a>
+                        </h4>
+
+                        <p><strong>Technologies:</strong> <i>NodeJs, MongoDB, Android</i> </p>
+                        <p>
+                            User can search a blood donor; Search parameter: name, blood group, division, district,
+                            availability
+                            User can search an ambulance or oxygen cylinder; Search parameter: name division, district
+                            User can show the live bed status of all the hospitals of Bangladesh and filter the
+                            hospitals according to hospital name, division, district, availability, last update
+                            We have an admin side built in React from where admin can perform CRUD operation for
+                            ambulance and oxygen cylinder.
+                        </p>
+                        <iframe src="https://www.youtube.com/embed/riQ56dGMZMA" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2018</i></strong></span></div>
+                </div> -->
+
+
+
             </div>
         </div>
-    </section>
+    </div>
+    <!-- </section> -->
+
+
 
     <section class="section mt-3">
         <div class="container mt-8">
-            <p class="copyright">© <em id="date">2023</em> Kaiser Hamid</p>
+            <p class="copyright "> © <em id="date">2023</em> Shovito Barua Soumma
+            </p>
         </div>
-        <p>This page is last updated on:
+        <p>
+            This page is last updated on :
             <script type="text/javascript">
                 function lastModified() {
                     var lastModDate = new Date(document.lastModified);
@@ -151,6 +240,7 @@
                     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                     // var formattedDate = days[lastModDate.getDay()] + ', ' + months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
                     var formattedDate = months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
+
                     document.write(formattedDate);
                 }
                 lastModified()
@@ -158,11 +248,13 @@
         </p>
     </section>
 
+
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
 
