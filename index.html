@@ -94,14 +94,31 @@
                 <small>Email:</small>
 
                 <a class="email-css" href="mailto:1804083@ce.buet.ac.bd"> <small>1804083@ce.buet.ac.bd</small></a>
+                <!-- Add this script to handle the download action -->
+              <script>
+              function downloadCV() {
+              // Replace 'path_to_your_pdf.pdf' with the actual path to your PDF file
+                var pdfPath = 'assets/files/Copy of CV -Kaiser Hamid.docx.pdf';
+
+             var link = document.createElement('a');
+            link.href = pdfPath;
+           link.download = 'your_cv.pdf';
+            link.click();
+           }
+
+          // Attach the function to the button's click event
+           document.querySelector('.btn-download').addEventListener('click', downloadCV);
+          </script>
+                <button class="btn btn-dark rounded btn-download">Download CV</button>
 
 
-                <div class="buttons pt-3">
+
+<!--                 <div class="buttons pt-3">
 
                     <button class="btn btn-dark rounded">Download CV</button>
 
                 </div>
-
+ -->
 
                 <div class="socials mt-4">
 
