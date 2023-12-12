@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Steller landing page.">
     <meta name="author" content="Devcrud">
-    <!--favicon-->
     <link rel="icon" type="image/png" href="assets/imgs/buet.png">
-
     <title>Kaiser Hamid</title>
-    <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css">
 </head>
-
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" onload="onload()">
-
-    <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -29,7 +21,6 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item">
@@ -40,6 +31,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="publication.html">Publication</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="skills.html">Skills</a>
                     </li>
@@ -52,44 +44,35 @@
                     <li class="nav-item">
                         <a class="nav-link" href="activities.html">Activities</a>
                     </li>
-
                     <div>
                         <input type="checkbox" class="checkbox" id="chk" onclick="darkmode()" />
                         <label class="label" for="chk">
-
                             <i class="fas fa-moon"></i>
                             <i class="fas fa-sun"></i>
                             <div class="ball"></div>
-
                         </label>
                     </div>
-
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- End of page navibation -->
 
-
-
-
-
-    <!-- About section -->
     <div class="container mt-5">
         <div class="row text-center text-md-left">
             <div class="resume-section-content">
-                <h2 class="mb-3 ">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                <h2 class="mb-3">Projects</h2>
+
+                <!-- First Project -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Traffic mode detection & tracking for Dhaka, Bangladesh</h4>
                         <div class="subheading mb-0">L4 T2 (8th semester)
-                            <a href="https://youtu.be/rugmiMs0m8U> [Demo Video]</a>
+                            <a href="https://youtu.be/rugmiMs0m8U">[Demo Video]</a>
                         </div>
                         <p><strong>Technologies:</strong> <i>Python, Google Colab</i></p>
-                        <p>This is the updated version of my previous detection work. An arbitrary ID is assigned to a specific vehicle for tracking purposes..</p>
-
-                        <div id="content-mobile">
-                            <iframe src="https://youtu.be/rugmiMs0m8U?si=_DjqWkakJf2eLhih"
+                        <p>This is the updated version of my previous detection work. An arbitrary ID is assigned to a specific vehicle for tracking purposes.</p>
+                        <div class="content-mobile">
+                            <iframe src="https://www.youtube.com/embed/rugmiMs0m8U"
                                 title="For detecting & tracking Heterogeneous traffic" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
@@ -99,22 +82,18 @@
                     <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
                 </div>
 
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
-                    <div class="flex-grow-1 ">
-                        <h4 class="mb-0 ">Gulshan-1 intersection Simulation for CAPSTONE Project L4-T1</h4>
-                        <div class="subheading mb-0 "><a href="https://youtu.be/ZXI0C4N1Xfc?si=5OP9gwe0avYCYtcT">[Demo
-                                Video]</a>
-                        </div>
+                <!-- Second Project -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Gulshan-1 intersection Simulation for CAPSTONE Project L4-T1</h4>
+                        <div class="subheading mb-0"><a href="https://youtu.be/ZXI0C4N1Xfc?si=5OP9gwe0avYCYtcT">[Demo Video]</a></div>
                         <p><strong>Technologies:</strong> <i>VISSIM Software</i> </p>
-                        <p>In this work, I have simulate current scenerio of Gulshan-1, Dhaka intersection and
-                            found queue length.
-                        </p>
+                        <p>In this work, I have simulated the current scenario of Gulshan-1, Dhaka intersection and found queue length.</p>
                     </div>
-
-                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2023</i></strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
                 </div>
 
-                <!--             add -->
+                <!-- Third Project -->
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                     <div class="flex-grow-1">
                         <h4 class="mb-0">Traffic mode detection for Dhaka, Bangladesh</h4>
@@ -122,11 +101,8 @@
                             <a href="https://youtu.be/pkRtK9QDwGI?si=MZnnbHDB0KcMbXGN">[Demo Video]</a>
                         </div>
                         <p><strong>Technologies:</strong> <i>Python, Google Colab</i></p>
-                        <p>I used <a
-                                href="https://www.kaggle.com/datasets/rifat963/dhakaai-dhaka-based-traffic-detection-dataset">Dhaka-Ai</a>
-                            Kaggle dataset for training the model. I used a deep learning algorithm for this model.</p>
-
-                        <div id="content-mobile">
+                        <p>I used <a href="https://www.kaggle.com/datasets/rifat963/dhakaai-dhaka-based-traffic-detection-dataset">Dhaka-Ai</a> Kaggle dataset for training the model. I used a deep learning algorithm for this model.</p>
+                        <div class="content-mobile">
                             <iframe src="https://www.youtube.com/embed/pkRtK9QDwGI?si=MZnnbHDB0KcMbXGN"
                                 title="For detecting Heterogeneous traffic" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -137,58 +113,43 @@
                     <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
                 </div>
 
-                <!--  DD   -->
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
-                    <div class="flex-grow-1 ">
-                        <h4 class="mb-0 ">Trip Tracker app for collecting data of users </h4>
-                        <div class="subheading mb-0 ">L3 T2 (6th semester)
-
-                            <a href="https://youtu.be/PItVsZRdbVo?si=ydOyUxiiCuzVrO60"> [Demo Video]</a>
+                <!-- Fourth Project -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Trip Tracker app for collecting data of users</h4>
+                        <div class="subheading mb-0">L3 T2 (6th semester)
+                            <a href="https://youtu.be/PItVsZRdbVo?si=ydOyUxiiCuzVrO60">[Demo Video]</a>
                         </div>
-                        <p><strong>Technologies:</strong> <i>Flutter, MongoDB</i> </p>
-                        <p>When the app launches for the first time, it will seek location permission and a userID.
-                            The app will remember this userID. When the user goes out, he/she will click on the
-                            'Start Trip' button and select a 'Mode.' When the trip ends, the user should press the
-                            'End Trip' button, and then the data will be sent to MongoDB. It will collect data
-                            on location, time, and mode.
-                        </p>
-
-                        <div id="content-mobile">
-                            <iframe id="content-mobile" src="https://www.youtube.com/embed/PItVsZRdbVo"
+                        <p><strong>Technologies:</strong> <i>Flutter, MongoDB</i></p>
+                        <p>When the app launches for the first time, it will seek location permission and a userID. The app will remember this userID. When the user goes out, he/she will click on the 'Start Trip' button and select a 'Mode.' When the trip ends, the user should press the 'End Trip' button, and then the data will be sent to MongoDB. It will collect data on location, time, and mode.</p>
+                        <div class="content-mobile">
+                            <iframe src="https://www.youtube.com/embed/PItVsZRdbVo"
                                 title="For data collection" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                             </iframe>
                         </div>
                     </div>
-                    <div class="flex-shrink-0 "><span class="text-primary "><strong><i>2023</i></strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-primary"><strong><i>2023</i></strong></span></div>
                 </div>
-
-
+                
+                <!-- Other Project Sections -->
 
             </div>
         </div>
     </div>
-    <!-- </section> -->
-
-
 
     <section class="section mt-3">
         <div class="container mt-8">
-            <p class="copyright "> © <em id="date">2023</em> Kaiser Hamid
-            </p>
+            <p class="copyright "> © <em id="date">2023</em> Kaiser Hamid</p>
         </div>
         <p>
-            This page is last updated on :
+            This page was last updated on :
             <script type="text/javascript">
                 function lastModified() {
                     var lastModDate = new Date(document.lastModified);
-                    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
                     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                    // var formattedDate = days[lastModDate.getDay()] + ', ' + months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
                     var formattedDate = months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
-
                     document.write(formattedDate);
                 }
                 lastModified()
@@ -196,16 +157,9 @@
         </p>
     </section>
 
-
-    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- steller js -->
     <script src="assets/js/steller.js"></script>
-
 </body>
-
 </html>
