@@ -170,7 +170,7 @@
  
     <section class="section mt-3">
         <div class="container mt-8">
-            <p class="copyright "> © <em id="date">2024</em> Kaiser Hamid
+            <p class="copyright "> © <em id="date">2024</em> Sayem Noor
             </p>
         </div>
         <p>
@@ -185,11 +185,24 @@
 
                     document.write(formattedDate);
                 }
-                lastModified()
+                lastModified();
             </script>
+
+
         </p>
     </section>
 
+
+    <script>
+        checkbox.addEventListener('change', function () {
+            localStorage.setItem('dark', this.checked);
+            if (this.checked) {
+                body.classList.add('dark')
+            } else {
+                body.classList.remove('dark')
+            }
+        });
+    </script>
 
 
     <!-- core  -->
