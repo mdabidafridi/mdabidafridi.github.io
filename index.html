@@ -43,11 +43,6 @@
             color: #ffffff;
         }
 
-        .dark .navbar {
-            background-color: #333333;
-            color: #ffffff;
-        }
-
         .dark .btn-dark {
             background-color: #333333;
             color: #ffffff;
@@ -55,6 +50,11 @@
 
         .dark .social-item {
             color: #ffffff;
+        }
+
+        .dark .copyright {
+            background-color: #ffffff; /* Copyright background color in dark mode */
+            color: #121212; /* Copyright text color in dark mode */
         }
     </style>
 </head>
@@ -66,11 +66,9 @@
             <a class="navbar-brand" href="#">
                 <h5 class="title">Kaiser Hamid</h5>
             </a>
-            <!-- Navbar Toggle Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item" id="home">
@@ -94,10 +92,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="activities.html">Activities</a>
                     </li>
-                    <!-- Dark Mode Toggle -->
-                    <div class="ml-3">
-                        <input type="checkbox" class="checkbox" id="darkModeToggle" />
-                        <label class="label" for="darkModeToggle">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" onclick="darkmode()" />
+                        <label class="label" for="chk">
                             <i class="fas fa-moon"></i>
                             <i class="fas fa-sun"></i>
                             <div class="ball"></div>
@@ -136,17 +133,17 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- Right side with About Me section -->
             <div class="col-md-8">
                 <h4>About Me</h4>
-                <p class="mb-3">
+                <p>
                     I am a final year (L4/T2) undergraduate student at <a href="https://www.buet.ac.bd">Bangladesh University of Engineering and Technology (BUET)</a> where I am studying Civil Engineering with a major in <i>Transportation Engineering</i>. I will be joining as a Graduate Research Associate at <a href="https://www.hiacelab.com/">Human-in-the-loop Advanced Cognitive Engineering Research Lab</a> led by Prof. <a href="https://scholar.google.com/citations?user=w6e-GSgAAAAJ&hl=zh-TW">Dr. Nade Liang</a>.
                 </p>
-                <p class="mb-3">
-                    My research primarily focuses on <i>Computer Vision, Deep learning, Autonomous Driving</i> and <i> Human Factors in Transportation</i>. I am passionate about developing a system which facilitates seamless interaction between humans and autonomous vehicles, leveraging computer vision, deep learning, and insights from human factors research to ensure safe, intuitive, and user-centered experiences on the road.
+                <p>
+                    My research primarily focuses on <i>Computer Vision, Deep learning, Autonomous Driving </i> and <i> Human Factors in Transportation</i>. I am passionate about developing a system which facilitates seamless interaction between humans and autonomous vehicles, leveraging computer vision, deep learning, and insights from human factors research to ensure safe, intuitive, and user-centered experiences on the road.
                 </p>
-                <p class="mb-3">
+                <p>
                     In my previous research projects, I explored in the domain of <i>Travel Behavior</i> and <i>Passive Data</i>, working closely under the guidance of esteemed Professors <a href="https://scholar.google.com/citations?user=4Wr8T_sAAAAJ&hl=en">Dr. Annesha Enam</a> and <a href="https://scholar.google.com/citations?user=RpuC9ycAAAAJ&hl=en">Dr. Samiul Hasan</a>. Our focus was on exploring the potential applications of <i>Google location history</i> as an origin-destination (O-D) matrix, revealing valuable observations about travel patterns and behavior. Furthermore, during my undergraduate thesis in the domain of Intelligent Transportation Systems (ITS), under the mentorship of Prof. <a href="https://scholar.google.com/citations?user=_7P6RCAAAAAJ&hl=en">Dr. Moazzem Hossain</a>, I investigated the estimation of queue length using computer vision techniques. This research aimed to improve traffic management strategies and enhance transportation efficiency.
                 </p>
                 <p>
@@ -155,7 +152,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Latest News section -->
     <div class="container mt-5">
         <h4>Latest News</h4>
@@ -177,11 +174,11 @@
             </li>
         </ul>
     </div>
-
+    
     <!-- Copyright and Last Modified -->
     <section class="section mt-3">
         <div class="container mt-8">
-            <p class="copyright "> © <em id="date">2024</em> Kaiser Hamid
+            <p class="copyright"> © <em id="date">2024</em> Kaiser Hamid
             </p>
         </div>
         <p>
@@ -189,6 +186,7 @@
             <script type="text/javascript">
                 function lastModified() {
                     var lastModDate = new Date(document.lastModified);
+                    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
                     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                     var formattedDate = months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
                     document.write(formattedDate);
@@ -198,46 +196,40 @@
         </p>
     </section>
 
-    <!-- Dark Mode Toggle Script -->
+    <!-- JavaScript -->
     <script>
-        const body = document.body;
-        const darkModeToggle = document.getElementById('darkModeToggle');
-
-        window.onload = function() {
-            const darkModeEnabled = localStorage.getItem('dark') === 'true';
-            if (darkModeEnabled) {
-                enableDarkMode();
-                darkModeToggle.checked = true;
+        function darkmode() {
+            var body = document.body;
+            var chk = document.getElementById('chk');
+            if (chk.checked) {
+                body.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
             } else {
-                disableDarkMode();
-                darkModeToggle.checked = false;
+                body.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
             }
-        };
-
-        function enableDarkMode() {
-            body.classList.add('dark');
-            localStorage.setItem('dark', 'true');
         }
 
-        function disableDarkMode() {
-            body.classList.remove('dark');
-            localStorage.setItem('dark', 'false');
-        }
-
-        darkModeToggle.addEventListener('change', function () {
-            if (this.checked) {
-                enableDarkMode();
+        function onload() {
+            var theme = localStorage.getItem('theme');
+            var body = document.body;
+            var chk = document.getElementById('chk');
+            if (theme === 'dark') {
+                body.classList.add('dark');
+                chk.checked = true;
             } else {
-                disableDarkMode();
+                body.classList.remove('dark');
+                chk.checked = false;
             }
-        });
+        }
     </script>
 
-    <!-- Additional Scripts -->
+    <!-- Core JavaScript -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/steller.js"></script>
+
 </body>
 
 </html>
