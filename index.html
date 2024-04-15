@@ -36,18 +36,41 @@
                 margin-bottom: 40px;
             }
         }
+
+        /* Dark Mode Styles */
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark .navbar {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .dark .btn-dark {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .dark .social-item {
+            color: #ffffff;
+        }
     </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" onload="onload()">
+    <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <h5 class="title">Kaiser Hamid</h5>
             </a>
+            <!-- Navbar Toggle Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item" id="home">
@@ -71,8 +94,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="activities.html">Activities</a>
                     </li>
-                    <div>
-                        <input type="checkbox" class="checkbox" id="darkModeToggle">
+                    <!-- Dark Mode Toggle -->
+                    <div class="ml-3">
+                        <input type="checkbox" class="checkbox" id="darkModeToggle" />
                         <label class="label" for="darkModeToggle">
                             <i class="fas fa-moon"></i>
                             <i class="fas fa-sun"></i>
@@ -84,39 +108,81 @@
         </div>
     </nav>
 
+    <!-- Main content -->
     <div class="container mt-5">
         <div class="row">
+            <!-- Left side with image and details -->
             <div class="col-md-4 text-center mb-4 mb-md-0">
-                <!-- Your left side content here -->
                 <div class="text-center mb-4">
                     <img src="assets/imgs/Kaiser_4.jpg" alt="Kaiser" class="mb-1 rounded-circle">
                 </div>
-                <!-- Your other content here -->
+                <div class="text-center">
+                    <h1 class="title" style="font-size: 40px; display: inline-block;">Kaiser Hamid</h1>
+                    <small>(he/his/him)</small>
+                    <p>Graduate Research Associate </p>
+                    <p>Incoming PhD student at
+                        <a href="https://www.ttu.edu/">Texas Tech University</a>
+                    </p>
+                    <div class="buttons pt-3">
+                        <a href="assets/files/CV-KAISER JAN24.pdf" download>
+                            <button class="btn btn-dark rounded">Download CV</button>
+                        </a>
+                    </div>
+                    <div class="socials mt-2 d-flex justify-content-center">
+                        <a class="social-item" href="mailto:1804083@ce.buet.ac.bd"><i class="ti-email"></i></a>
+                        <a class="social-item" href="https://www.linkedin.com/in/kaiser-buet"><i class="ti-linkedin"></i></a>
+                        <a class="social-item" href="https://youtube.com/@kaiserhamid1007?si=ql5qjv-ufkJzjRIW"><i class="ti-youtube"></i></a>
+                        <a class="social-item" href="https://github.com/kaiser-75"><i class="ti-github"></i></a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Right side with About Me section -->
             <div class="col-md-8">
-                <!-- Your right side content here -->
                 <h4>About Me</h4>
-                <p>Your About Me content here...</p>
-                <!-- Continue with the rest of your content -->
+                <p class="mb-3">
+                    I am a final year (L4/T2) undergraduate student at <a href="https://www.buet.ac.bd">Bangladesh University of Engineering and Technology (BUET)</a> where I am studying Civil Engineering with a major in <i>Transportation Engineering</i>. I will be joining as a Graduate Research Associate at <a href="https://www.hiacelab.com/">Human-in-the-loop Advanced Cognitive Engineering Research Lab</a> led by Prof. <a href="https://scholar.google.com/citations?user=w6e-GSgAAAAJ&hl=zh-TW">Dr. Nade Liang</a>.
+                </p>
+                <p class="mb-3">
+                    My research primarily focuses on <i>Computer Vision, Deep learning, Autonomous Driving</i> and <i> Human Factors in Transportation</i>. I am passionate about developing a system which facilitates seamless interaction between humans and autonomous vehicles, leveraging computer vision, deep learning, and insights from human factors research to ensure safe, intuitive, and user-centered experiences on the road.
+                </p>
+                <p class="mb-3">
+                    In my previous research projects, I explored in the domain of <i>Travel Behavior</i> and <i>Passive Data</i>, working closely under the guidance of esteemed Professors <a href="https://scholar.google.com/citations?user=4Wr8T_sAAAAJ&hl=en">Dr. Annesha Enam</a> and <a href="https://scholar.google.com/citations?user=RpuC9ycAAAAJ&hl=en">Dr. Samiul Hasan</a>. Our focus was on exploring the potential applications of <i>Google location history</i> as an origin-destination (O-D) matrix, revealing valuable observations about travel patterns and behavior. Furthermore, during my undergraduate thesis in the domain of Intelligent Transportation Systems (ITS), under the mentorship of Prof. <a href="https://scholar.google.com/citations?user=_7P6RCAAAAAJ&hl=en">Dr. Moazzem Hossain</a>, I investigated the estimation of queue length using computer vision techniques. This research aimed to improve traffic management strategies and enhance transportation efficiency.
+                </p>
+                <p>
+                    Apart from my academic activities, I really enjoy spending time outdoors and one of my big dreams is to visit as many countries as I can. During my free time, I like to go to the gym to stay fit. I also enjoy hanging out with friends and family and I'm always excited to try new types of food when I get the chance.
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Your Latest News section -->
+    <!-- Latest News section -->
     <div class="container mt-5">
         <h4>Latest News</h4>
         <ul>
             <li>
                 <p>April, 2024: Received a full-funded PhD offer from Texas Tech University.</p>
             </li>
-            <!-- Add the rest of your news items -->
+            <li>
+                <p>January, 2024: First paper accepted in the 17th International Conference on Travel Behavior Research 2024.</p>
+            </li>
+            <li>
+                <p>January, 2024: Achieved a TOEFL iBT score of 95 (R20, L26, S23, W26).</p>
+            </li>
+            <li>
+                <p>December, 2023: Awarded a prestigious research grant from the Research and Innovation Centre for Science and Engineering for research on Google Location History.</p>
+            </li>
+            <li>
+                <p>September, 2023: Submitted first research paper to the 17th International Conference on Travel Behavior Research 2024.</p>
+            </li>
         </ul>
     </div>
 
     <!-- Copyright and Last Modified -->
     <section class="section mt-3">
         <div class="container mt-8">
-            <p class="copyright "> © <em id="date">2024</em> Kaiser Hamid</p>
+            <p class="copyright "> © <em id="date">2024</em> Kaiser Hamid
+            </p>
         </div>
         <p>
             This page is last updated on :
@@ -132,31 +198,42 @@
         </p>
     </section>
 
+    <!-- Dark Mode Toggle Script -->
     <script>
-        const body = document.body; // Define body variable
-        const darkModeToggle = document.getElementById('darkModeToggle'); // Get checkbox by ID
+        const body = document.body;
+        const darkModeToggle = document.getElementById('darkModeToggle');
 
         window.onload = function() {
             const darkModeEnabled = localStorage.getItem('dark') === 'true';
             if (darkModeEnabled) {
-                body.classList.add('dark');
-                darkModeToggle.checked = true; // Update checkbox state
+                enableDarkMode();
+                darkModeToggle.checked = true;
             } else {
-                body.classList.remove('dark');
-                darkModeToggle.checked = false; // Update checkbox state
+                disableDarkMode();
+                darkModeToggle.checked = false;
             }
         };
 
+        function enableDarkMode() {
+            body.classList.add('dark');
+            localStorage.setItem('dark', 'true');
+        }
+
+        function disableDarkMode() {
+            body.classList.remove('dark');
+            localStorage.setItem('dark', 'false');
+        }
+
         darkModeToggle.addEventListener('change', function () {
-            localStorage.setItem('dark', this.checked);
             if (this.checked) {
-                body.classList.add('dark');
+                enableDarkMode();
             } else {
-                body.classList.remove('dark');
+                disableDarkMode();
             }
         });
     </script>
 
+    <!-- Additional Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
