@@ -188,15 +188,20 @@
     </section>
     <!-- End of Copyright and Last Modified -->
     <!-- Additional script -->
+    
     <script>
-        checkbox.addEventListener('change', function () {
+        var checkbox = document.getElementById('chk');
+        var body = document.body;
+
+       checkbox.addEventListener('change', function () {
             localStorage.setItem('dark', this.checked);
             if (this.checked) {
-                body.classList.add('dark')
-            } else {
-                body.classList.remove('dark')
-            }
-        });
+              body.classList.add('dark');
+               } else {
+                  body.classList.remove('dark');
+                     }
+                });
+
     </script>
     <!-- Core scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
