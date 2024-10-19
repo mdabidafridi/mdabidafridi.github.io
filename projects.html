@@ -10,8 +10,36 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/steller.css">
+
+    <style>
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Ensure text color is visible in dark mode */
+        body.dark-mode .card-body, body.dark-mode .card-footer, body.dark-mode .card-title {
+            color: #ffffff;
+        }
+
+        /* Customize buttons in dark mode */
+        body.dark-mode .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+
+        /* Light mode defaults (optional) */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" onload="onload()">
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -120,9 +148,11 @@
 
         </div>
     </div>
+
+    <!-- Footer section -->
     <section class="section mt-3">
         <div class="container mt-8">
-            <p class="copyright "> © <em id="date">2024</em> Kaiser Hamid</p>
+            <p class="copyright">© <em id="date">2024</em> Kaiser Hamid</p>
         </div>
         <p>
             This page was last updated on :
@@ -142,5 +172,13 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/steller.js"></script>
+
+    <!-- Dark mode toggle function -->
+    <script>
+        function darkmode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
