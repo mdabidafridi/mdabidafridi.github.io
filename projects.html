@@ -19,7 +19,7 @@
         }
 
         /* Ensure text color is visible in dark mode */
-        body.dark-mode .card-body, body.dark-mode .card-footer, body.dark-mode .card-title {
+        body.dark-mode .card-body, body.dark-mode .card-footer, body.dark-mode .card-title, body.dark-mode p {
             color: #ffffff;
         }
 
@@ -34,6 +34,11 @@
         body.light-mode {
             background-color: #ffffff;
             color: #000000;
+        }
+
+        /* Remove year from card footer */
+        .card-footer {
+            display: none;
         }
     </style>
 
@@ -54,7 +59,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                  
                     <li class="nav-item">
                         <a class="nav-link" href="publication.html">Publication</a>
                     </li>
@@ -88,7 +92,6 @@
                         <p class="card-text">L4 T2 (8th semester) <br><strong>Technologies:</strong> Python, Google Colab</p>
                         <a href="https://youtu.be/aOExN9XZDoQ" class="btn btn-primary btn-block">Watch Demo</a>
                     </div>
-                    <div class="card-footer text-muted">2023</div>
                 </div>
             </div>
 
@@ -101,7 +104,6 @@
                         <p class="card-text">L4 T2 (8th semester) <br><strong>Technologies:</strong> Python, Google Colab</p>
                         <a href="https://youtu.be/rugmiMs0m8U" class="btn btn-primary btn-block">Watch Demo</a>
                     </div>
-                    <div class="card-footer text-muted">2023</div>
                 </div>
             </div>
 
@@ -114,7 +116,6 @@
                         <p class="card-text">L4 T1 <br><strong>Technologies:</strong> VISSIM Software</p>
                         <a href="https://youtu.be/ZXI0C4N1Xfc?si=5OP9gwe0avYCYtcT" class="btn btn-primary btn-block">Watch Demo</a>
                     </div>
-                    <div class="card-footer text-muted">2023</div>
                 </div>
             </div>
 
@@ -127,7 +128,6 @@
                         <p class="card-text">L4 T1 (7th semester) <br><strong>Technologies:</strong> Python, Google Colab</p>
                         <a href="https://youtu.be/pkRtK9QDwGI?si=MZnnbHDB0KcMbXGN" class="btn btn-primary btn-block">Watch Demo</a>
                     </div>
-                    <div class="card-footer text-muted">2023</div>
                 </div>
             </div>
 
@@ -140,7 +140,6 @@
                         <p class="card-text">L3 T2 (6th semester) <br><strong>Technologies:</strong> Flutter, MongoDB</p>
                         <a href="https://youtu.be/PItVsZRdbVo?si=ydOyUxiiCuzVrO60" class="btn btn-primary btn-block">Watch Demo</a>
                     </div>
-                    <div class="card-footer text-muted">2022</div>
                 </div>
             </div>
 
