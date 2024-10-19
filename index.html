@@ -53,7 +53,43 @@
         }
 
         .education-list li {
-            padding-bottom: 10px;
+            padding-bottom: 10px; /* Space between items */
+        }
+
+        /* Fix for separate lines in Education */
+        .education-program {
+            display: block;
+            font-weight: bold;
+        }
+
+        .education-university {
+            display: block;
+            color: #555;
+        }
+
+        /* Navigation fix for the mobile view */
+        .navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            text-align: right;
+        }
+
+        /* Ensure the navbar dropdown container is small and right-aligned */
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        /* Ensure smaller dropdowns in mobile view */
+        @media (max-width: 767px) {
+            .navbar-collapse {
+                width: 200px;
+                right: 0;
+                position: absolute;
+                background-color: #f8f9fa;
+            }
         }
     </style>
 </head>
@@ -151,8 +187,14 @@
                     <div class="col-md-6">
                         <h4>Education</h4>
                         <ul class="education-list">
-                            <li><i class="fas fa-graduation-cap education-icon"></i> Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2029</li>
-                            <li><i class="fas fa-graduation-cap education-icon"></i> B.Sc. in Civil Engineering, Bangladesh University of Engineering & Technology (BUET), 2019-2024</li>
+                            <li>
+                                <span class="education-program">Ph.D. in Human-Computer Interaction</span>
+                                <span class="education-university">Texas Tech University, Expected 2029</span>
+                            </li>
+                            <li>
+                                <span class="education-program">B.Sc. in Civil Engineering</span>
+                                <span class="education-university">Bangladesh University of Engineering & Technology (BUET), 2019-2024</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
