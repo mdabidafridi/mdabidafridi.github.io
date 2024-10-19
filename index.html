@@ -53,7 +53,7 @@
         }
 
         .education-list li {
-            padding-bottom: 10px; /* Optional: to add space between items */
+            padding-bottom: 10px;
         }
     </style>
 </head>
@@ -70,29 +70,29 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item" id="home">
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
-                  
                     <li class="nav-item">
                         <a class="nav-link" href="publication.html">Publication</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
-                    <div>
+                    <li class="nav-item">
                         <input type="checkbox" class="checkbox" id="chk" onclick="darkmode()" />
                         <label class="label" for="chk">
                             <i class="fas fa-moon"></i>
                             <i class="fas fa-sun"></i>
-                            <div class="ball"></div>
+                            <span class="ball"></span>
                         </label>
-                    </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- End of page navigation -->
+
     <!-- Main content -->
     <div class="container mt-5">
         <div class="row">
@@ -124,10 +124,10 @@
             <div class="col-md-8">
                 <h4>About Me</h4>
                 <p class="mb-3">
-                   I am currently pursuing my Ph.D. at <a href="https://www.ttu.edu/">Texas Tech University</a>, where I serve as a Graduate Research Associate in the <a href="https://www.hiacelab.com/">Human-in-the-loop Advanced Cognitive Engineering Research Lab</a>, under the esteemed guidance of <a href="https://scholar.google.com/citations?user=w6e-GSgAAAAJ&hl=zh-TW">Dr. Nade Liang</a>.
+                    I am currently pursuing my Ph.D. at <a href="https://www.ttu.edu/">Texas Tech University</a>, where I serve as a Graduate Research Associate in the <a href="https://www.hiacelab.com/">Human-in-the-loop Advanced Cognitive Engineering Research Lab</a>, under the esteemed guidance of <a href="https://scholar.google.com/citations?user=w6e-GSgAAAAJ&hl=zh-TW">Dr. Nade Liang</a>.
                 </p>
                 <p class="mb-3">
-                    My research primarily focuses on <i>Human Computer Interaction </i> and <i>Computer Vision</i>. I am passionate about developing a system that facilitates seamless interaction between humans and autonomous vehicles, leveraging computer vision, deep learning, and insights from human factors research to ensure safe, intuitive, and user-centered experiences on the road.
+                    My research primarily focuses on <i>Human Computer Interaction</i> and <i>Computer Vision</i>. I am passionate about developing a system that facilitates seamless interaction between humans and autonomous vehicles, leveraging computer vision, deep learning, and insights from human factors research to ensure safe, intuitive, and user-centered experiences on the road.
                 </p>
                 <p class="mb-3">
                     In my previous research projects, I explored in the domain of <i>Travel Behavior</i> and <i>Passive Data</i>, working closely under the guidance of esteemed Professors <a href="https://scholar.google.com/citations?user=4Wr8T_sAAAAJ&hl=en">Dr. Annesha Enam</a> and <a href="https://scholar.google.com/citations?user=RpuC9ycAAAAJ&hl=en">Dr. Samiul Hasan</a>. Our focus was on exploring the potential applications of <i>Google location history</i> as an origin-destination (O-D) matrix, revealing valuable observations about travel patterns and behavior. Furthermore, during my undergraduate thesis in the domain of Intelligent Transportation Systems (ITS), under the mentorship of Prof. <a href="https://scholar.google.com/citations?user=_7P6RCAAAAAJ&hl=en">Dr. Moazzem Hossain</a>, I investigated the estimation of queue length using computer vision techniques. This research aimed to improve traffic management strategies and enhance transportation efficiency.
@@ -145,7 +145,6 @@
                             <li>Computer Vision</li>
                             <li>Autonomous Driving</li>
                             <li>Deep Learning</li>
-                          
                         </ul>
                     </div>
 
@@ -153,7 +152,6 @@
                         <h4>Education</h4>
                         <ul class="education-list">
                             <li><i class="fas fa-graduation-cap education-icon"></i> Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2029</li>
-                           
                             <li><i class="fas fa-graduation-cap education-icon"></i> B.Sc. in Civil Engineering, Bangladesh University of Engineering & Technology (BUET), 2019-2024</li>
                         </ul>
                     </div>
@@ -194,6 +192,9 @@
         }
     </script>
 
+    <!-- jQuery and Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
