@@ -22,22 +22,21 @@
             max-width: 100%;
             height: auto;
         }
-        /* CSS code to show .mobile-only div only in mobile view */
+
+        /* Custom spacing for mobile and desktop views */
+        .custom-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .custom-row > div {
+            margin-bottom: 20px;
+        }
+
+        /* CSS for stacking in mobile view */
         @media only screen and (max-width: 767px) {
-            .mobile-only {
-                display: block;
-            }
-        }
-        /* CSS code to hide .mobile-only div in desktop view */
-        @media only screen and (min-width: 768px) {
-            .mobile-only {
-                display: none;
-            }
-        }
-        /* CSS for mobile space between left and right sections */
-       @media only screen and (max-width: 767px) {
-                 .mb-4 {
-                    margin-bottom: 40px; /* Adjust as needed */
+            .stack {
+                flex-direction: column;
             }
         }
     </style>
@@ -123,47 +122,48 @@
                     Apart from my academic activities, I really enjoy spending time outdoors and one of my big dreams is to visit as many countries as I can. During my free time, I like to go to the gym to stay fit. I also enjoy hanging out with friends and family and I'm always excited to try new types of food when I get the chance.
                 </p>
 
-                <!-- Interests Section -->
-                <div class="mt-5">
-                    <h4>Interests</h4>
-                    <ul>
-                        <li>Human-Computer Interaction</li>
-                        <li>Computer Vision</li>
-                        <li>Autonomous Vehicles</li>
-                        <li>Deep Learning</li>
-                        <li>Travel Behavior Modeling</li>
-                    </ul>
-                </div>
+                <!-- Interests and Education Section (side by side on desktop) -->
+                <div class="custom-row stack row mt-5">
+                    <div class="col-md-6">
+                        <h4>Interests</h4>
+                        <ul>
+                            <li>Human-Computer Interaction</li>
+                            <li>Computer Vision</li>
+                            <li>Autonomous driving</li>
+                            <li>Deep Learning</li>
+                            
+                        </ul>
+                    </div>
 
-                <!-- Education Section -->
-                <div class="mt-5">
-                    <h4>Education</h4>
-                    <ul>
-                        <li>Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2025</li>
-                        <li>M.S. in Data Science, Texas Tech University, Expected 2023</li>
-                        <li>B.Sc. in Civil Engineering, Bangladesh University of Engineering & Technology (BUET), 2020</li>
-                    </ul>
+                    <div class="col-md-6">
+                        <h4>Education</h4>
+                        <ul>
+                            <li>Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2029</li>
+
+                            <li>B.Sc. in Civil Engineering, Bangladesh University of Engineering & Technology (BUET), 2019-2024</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-    <div class="container mt-5">
-        <h4>Latest News</h4>
-        <ul>
-            <li>
-                <p>July, 2024: My paper accepted for publication in <a href="https://ieee-itsc.org/2024/">27th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2024).</a></p>
-            </li>
-            <li>
-                <p>June, 2024: Published a dataset named "Bangladeshi vehicles" in Kaggle for computer vision task.</p>
-            </li>
-            <li>
-                <p>January, 2024: First paper accepted in the 17th International Conference on Travel Behavior Research 2024.</p>
-            </li>
-            <li>
-                <p>December, 2023: Awarded a prestigious $2500 research grant from the CASR for research on autonomous driving.</p>
-            </li>
-        </ul>
-    </div>
+        <div class="container mt-5">
+            <h4>Latest News</h4>
+            <ul>
+                <li>
+                    <p>July, 2024: My paper accepted for publication in <a href="https://ieee-itsc.org/2024/">27th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2024).</a></p>
+                </li>
+                <li>
+                    <p>June, 2024: Published a dataset named "Bangladeshi vehicles" in Kaggle for computer vision task.</p>
+                </li>
+                <li>
+                    <p>January, 2024: First paper accepted in the 17th International Conference on Travel Behavior Research 2024.</p>
+                </li>
+                <li>
+                    <p>December, 2023: Awarded a prestigious $2500 research grant from the CASR for research on autonomous driving.</p>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- Dark mode script -->
