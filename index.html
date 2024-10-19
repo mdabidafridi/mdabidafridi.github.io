@@ -46,13 +46,13 @@
             color: #000;
         }
 
-        /* Remove bullet points from lists */
-        ul {
+        /* Remove bullet points only from the Education list */
+        .education-list {
             list-style-type: none;
             padding-left: 0;
         }
 
-        li {
+        .education-list li {
             padding-bottom: 10px; /* Optional: to add space between items */
         }
     </style>
@@ -147,14 +147,15 @@
                             <li>Computer Vision</li>
                             <li>Autonomous Vehicles</li>
                             <li>Deep Learning</li>
+                            <li>Travel Behavior Modeling</li>
                         </ul>
                     </div>
 
                     <div class="col-md-6">
                         <h4>Education</h4>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap education-icon"></i> Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2029</li>
-                            <li><i class="fas fa-graduation-cap education-icon"></i> M.S. in Data Science, Texas Tech University, Expected 2025</li>
+                        <ul class="education-list">
+                            <li><i class="fas fa-graduation-cap education-icon"></i> Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2025</li>
+                            <li><i class="fas fa-graduation-cap education-icon"></i> M.S. in Data Science, Texas Tech University, Expected 2023</li>
                             <li><i class="fas fa-graduation-cap education-icon"></i> B.Sc. in Civil Engineering, Bangladesh University of Engineering & Technology (BUET), 2020</li>
                         </ul>
                     </div>
