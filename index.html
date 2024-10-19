@@ -16,7 +16,13 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css">
+
     <style>
+        /* CSS for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
         /* CSS code to make images responsive on mobile view */
         img {
             max-width: 100%;
@@ -55,6 +61,48 @@
         .education-list li {
             padding-bottom: 10px; /* Optional: to add space between items */
         }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Ensure text color and background visibility in dark mode */
+        body.dark-mode .card {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border: 1px solid #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow to create contrast */
+        }
+
+        body.dark-mode .card-body {
+            background-color: #2c2c2c; /* Darker card body background */
+            border-top: 1px solid #444;
+            padding: 15px;
+        }
+
+        body.dark-mode .card-title, body.dark-mode .card-text {
+            color: #ffffff; /* Ensures text color stays white in dark mode */
+        }
+
+        /* Customize buttons in dark mode */
+        body.dark-mode .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+
+        /* Light mode defaults (optional) */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Remove year from card footer */
+        .card-footer {
+            display: none;
+        }
     </style>
 </head>
 
@@ -62,7 +110,7 @@
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <h5 class="title">Kaiser Hamid</h5>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,15 +118,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item" id="home">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                  
                     <li class="nav-item">
-                        <a class="nav-link" href="publication.html">Publication</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="#publication">Publication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <div>
                         <input type="checkbox" class="checkbox" id="chk" onclick="darkmode()" />
@@ -93,8 +140,9 @@
         </div>
     </nav>
     <!-- End of page navigation -->
-    <!-- Main content -->
-    <div class="container mt-5">
+
+    <!-- Home Section -->
+    <div class="container mt-5" id="home-section">
         <div class="row">
             <!-- Left side with image and details -->
             <div class="col-md-4 text-center mb-4 mb-md-0">
@@ -145,7 +193,6 @@
                             <li>Computer Vision</li>
                             <li>Autonomous Driving</li>
                             <li>Deep Learning</li>
-                          
                         </ul>
                     </div>
 
@@ -153,47 +200,91 @@
                         <h4>Education</h4>
                         <ul class="education-list">
                             <li><i class="fas fa-graduation-cap education-icon"></i> Ph.D. in Human-Computer Interaction, Texas Tech University, Expected 2029</li>
-                           
                             <li><i class="fas fa-graduation-cap education-icon"></i> B.Sc. in Civil Engineering, Bangladesh University of Engineering & Technology (BUET), 2019-2024</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container mt-2">
-            <h4>Latest News</h4>
-            <ul>
-                <li>
-                    <p>July, 2024: My paper accepted for publication in <a href="https://ieee-itsc.org/2024/">27th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2024).</a></p>
-                </li>
-                <li>
-                    <p>June, 2024: Published a dataset named "Bangladeshi vehicles" in Kaggle for computer vision task.</p>
-                </li>
-                <li>
-                    <p>January, 2024: First paper accepted in the 17th International Conference on Travel Behavior Research 2024.</p>
-                </li>
-                <li>
-                    <p>December, 2023: Awarded a prestigious $2500 research grant from the CASR for research on autonomous driving.</p>
-                </li>
-            </ul>
+    <!-- Publication Section -->
+    <div class="container mt-5" id="publication">
+        <h2 class="mb-4 text-center">Publication</h2>
+        <ul>
+            <li>
+                <b>Kaiser Hamid</b>, Md Sayem Noor, <a
+                    href="https://scholar.google.com/citations?user=4Wr8T_sAAAAJ&hl=en">Annesha Enam</a>,PhD
+                <i>“Assessing the Potential of Google Location History (GLH) data for Travel Behavior Research in the Context of Developing Country ”</i>, 
+                Proceedings of <a href="https://ieee-itsc.org/2024/">27th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2024)</a>
+                <b>[ACCEPTED FOR PUBLICATION]</b>
+            </li>
+            <li>
+                <b>Kaiser Hamid</b>,<a href="https://scholar.google.com/citations?user=_7P6RCAAAAAJ&hl=en"> Moazzem Hossain</a>,PhD
+                <i>“Estimation of queue length in heterogeneous traffic using computer vision ”</i> <b>[Thesis]</b>
+            </li>
+            <li>
+                <b>Kaiser Hamid</b>, Md Sayem Noor, <a href="https://scholar.google.com/citations?user=4Wr8T_sAAAAJ&hl=en">Annesha Enam</a>,PhD,<a
+                    href="https://scholar.google.com/citations?user=RpuC9ycAAAAJ&hl=en"> Samiul Hasan</a>,PhD
+                <i>“Assessing the Potential of Google Location History (GLH) data for Travel Behavior Research in the Context of Developing Country ”</i>, 
+                Proceedings of <a href="https://iatbr2024.univie.ac.at/home/">17th International Conference on Travel Behavior Research 2024</a>, July 24-28 
+                <b>[ACCEPTED]</b>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container mt-5" id="projects">
+        <h2 class="mb-4 text-center">Projects</h2>
+
+        <!-- First Project -->
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img src="https://img.youtube.com/vi/aOExN9XZDoQ/0.jpg" alt="Pedestrian detection thumbnail" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedestrian detection using deep learning</h5>
+                        <p class="card-text">L4 T2 (8th semester) <br><strong>Technologies:</strong> Python, Google Colab</p>
+                        <a href="https://youtu.be/aOExN9XZDoQ" class="btn btn-primary btn-block">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
         </div>
     </div>
 
-    <!-- Dark mode script -->
+    <!-- Footer section -->
+    <section class="section mt-3">
+        <div class="container mt-8">
+            <p class="copyright">© <em id="date">2024</em> Kaiser Hamid</p>
+        </div>
+        <p>
+            This page was last updated on :
+            <script type="text/javascript">
+                function lastModified() {
+                    var lastModDate = new Date(document.lastModified);
+                    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    var formattedDate = months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
+                    document.write(formattedDate);
+                }
+                lastModified()
+            </script>
+        </p>
+    </section>
+
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/steller.js"></script>
+
+    <!-- Dark mode toggle function -->
     <script>
         function darkmode() {
-            const checkbox = document.getElementById('chk');
-            const body = document.body;
-
-            if (checkbox.checked) {
-                body.classList.add('dark-mode');
-            } else {
-                body.classList.remove('dark-mode');
-            }
+            var element = document.body;
+            element.classList.toggle("dark-mode");
         }
     </script>
-
 </body>
 
 </html>
