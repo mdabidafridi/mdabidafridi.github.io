@@ -12,6 +12,30 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/steller.css">
+    <style>
+        /* Custom CSS for publication text */
+        .publication-text {
+            font-size: 0.9em; /* Adjust font size as needed */
+            max-width: 80%; /* Limit the width for better text wrapping */
+        }
+
+        /* Flexbox layout for mobile devices */
+        @media (max-width: 768px) {
+            .publication-entry {
+                flex-direction: column; /* Stack vertically on smaller screens */
+                align-items: center; /* Center the content */
+            }
+
+            .publication-text {
+                max-width: 100%; /* Allow text to take full width */
+            }
+
+            .publication-image {
+                max-width: 100%; /* Ensure image is responsive */
+                margin-top: 10px; /* Add margin for spacing */
+            }
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" onload="onload()">
@@ -58,10 +82,10 @@
             <div class="col-12">
                 <h2 class="mb-4">Publication</h2>
 
-                <!-- Publication entry -->
-                <div class="d-flex flex-row align-items-start mt-4">
-                    <!-- Publication details -->
-                    <div class="col-md-8">
+                <!-- Publication entry with flex layout -->
+                <div class="d-flex flex-row align-items-start mt-4 publication-entry">
+                    <!-- Publication details with reduced font size -->
+                    <div class="col-md-8 publication-text">
                         <li>
                             <b>Kaiser Hamid</b>, Md Sayem Noor, <a href="https://scholar.google.com/citations?user=4Wr8T_sAAAAJ&hl=en">Annesha Enam</a>, PhD
                             <i>“Assessing the Potential of Google Location History (GLH) data for Travel Behavior Research in the Context of Developing Country”</i>, Proceedings of <a href="https://ieee-itsc.org/2024/">27th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2024)</a>
@@ -75,8 +99,8 @@
                         </li>
                     </div>
 
-                    <!-- Image section -->
-                    <div class="col-md-4 text-center d-flex align-items-center">
+                    <!-- Image section aligned to text container height -->
+                    <div class="col-md-4 text-center d-flex align-items-center publication-image">
                         <img src="assets/imgs/glh_mode_prediction.PNG" class="img-fluid" alt="Publication Image"
                              style="height: 100%; max-height: 180px; width: auto; object-fit: cover; border-radius: 8px;">
                     </div>
@@ -85,7 +109,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Footer section -->
     <section class="section mt-3">
